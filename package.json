@@ -1,7 +1,7 @@
 {
   "name": "vite-mern-template",
   "version": "1.0.0",
-  "main": "server/src/index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "watch": "tsc -w",
     "server": "node --watch dist/index.js",
