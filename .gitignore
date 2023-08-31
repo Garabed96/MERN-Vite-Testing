@@ -4,3 +4,4 @@ node_modules
 .idea
 client/node_modules
 dist
+.env
