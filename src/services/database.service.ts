@@ -1,11 +1,11 @@
-import * as mongoDB from 'mongodb'
+import mongoDB, { type Db } from 'mongodb'
 import * as dotenv from 'dotenv'
 // External Dependencies
 
 // Global Variables
 export const collections: { games?: mongoDB.Collection } = {}
 // Initialize Connection
-export async function connectToDatabase() {
+export async function connectToDatabase(): Promise<Db> {
    dotenv.config()
 
    const client: mongoDB.MongoClient = new mongoDB.MongoClient(
@@ -25,4 +25,5 @@ export async function connectToDatabase() {
    console.log(
       `Successfully connected to database: ${db.databaseName} and collection: ${gamesCollection.collectionName}`,
    )
+   return db
 }
