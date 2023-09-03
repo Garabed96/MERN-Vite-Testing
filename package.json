@@ -8,7 +8,8 @@
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "jest",
-    "lint": "eslint 'src/**/*.ts' --fix"
+    "lint": "eslint 'src/**/*.ts' --fix",
+    "pretty": "prettier --write 'src/**/*.{js,jsx,ts,tsx}' './client/**/*.{js,jsx,ts,tsx}'"
   },
   "license": "MIT",
   "dependencies": {
