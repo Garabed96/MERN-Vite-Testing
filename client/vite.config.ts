@@ -8,7 +8,8 @@ export default defineConfig({
    server: {
       port: 3000,
       proxy: {
-         '/api': 'Enter your backend host with port',
+         '/api':
+            'Enter your backend host with port',
       },
    },
    plugins: [

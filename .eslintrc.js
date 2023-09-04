@@ -5,6 +5,7 @@ module.exports = {
       // browser: true,
       es6: true,
       browser: true,
+      node: true,
    },
    extends: [
       'plugin:@typescript-eslint/recommended',
