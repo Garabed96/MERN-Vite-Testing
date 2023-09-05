@@ -1,10 +1,11 @@
 import { Request, Response } from 'express'
 
 import { getUserByEmail, createUser } from '../db/users'
-import { random } from '../helper'
+import { authentication, random } from '../helper'
 
 export const register = async (_req: Request, res: Response) => {
    try {
+      const { email, password, username } = _req.body
       if (!email || !password || !username) {
          return res.sendStatus(400)
       }

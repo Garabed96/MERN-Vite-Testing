@@ -1,9 +1,9 @@
 ### Create a new game
-POST http://localhost:3000/your-endpoint
+POST http://localhost:8000/auth/register
 Content-Type: application/json
 
 {
-  "name": "Example Users",
-  "price": 99.99,
-  "category": "Adventure"
+  "email": "garo@codes.com",
+    "password": "123",
+      "name": "garo"
 }
