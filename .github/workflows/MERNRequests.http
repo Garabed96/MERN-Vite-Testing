@@ -3,7 +3,7 @@ POST http://localhost:3000/your-endpoint
 Content-Type: application/json
 
 {
-  "name": "Example Game",
+  "name": "Example Users",
   "price": 99.99,
   "category": "Adventure"
 }
