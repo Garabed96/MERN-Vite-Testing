@@ -9,7 +9,7 @@ import dotenv from 'dotenv'
 dotenv.config({ path: '.env' })
 const MONGO_URL = process.env.MONGO_KEY
 
-import router from './routes'
+import router from './router'
 
 const app = express()
 
