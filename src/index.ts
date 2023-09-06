@@ -1,9 +1,9 @@
 import express from 'express'
 import http from 'http'
-import bodyparser from 'body-parser'
-import cookieParser from 'cookie-parser'
-import compression from 'compression'
-import cors from 'cors'
+// import bodyparser from 'body-parser'
+// import cookieParser from 'cookie-parser'
+// import compression from 'compression'
+// import cors from 'cors'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 dotenv.config({ path: '.env' })
@@ -13,10 +13,10 @@ import router from './router'
 
 const app = express()
 
-app.use(cors({ credentials: true }))
-app.use(compression())
-app.use(cookieParser())
-app.use(bodyparser.json())
+// app.use(cors({ credentials: true }))
+// app.use(compression())
+// app.use(cookieParser())
+// app.use(bodyparser.json())
 
 const server = http.createServer(app)
 
