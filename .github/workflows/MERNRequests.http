@@ -1,0 +1,9 @@
+### Create a new game
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+  "email": "garo@codes.com",
+    "password": "123",
+      "name": "garo"
+}
